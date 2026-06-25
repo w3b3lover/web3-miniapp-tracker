@@ -5,12 +5,13 @@
     "status": "Testing",
     "ecosystem": "Soneium",
     "website": "https://app.startale.com",
-    "notes": "Tracking mini apps, user experience, and ecosystem activity.",
+    "notes": "Tracking mini apps, user experience, onboarding, and ecosystem activity.",
     "score": 9,
     "tags": [
       "web3",
       "miniapps",
-      "soneium"
+      "soneium",
+      "superapp"
     ]
   },
   {
@@ -67,6 +68,20 @@
       "game",
       "fantasy",
       "miniapp"
+    ]
+  },
+  {
+    "name": "World of Trinity",
+    "category": "Game",
+    "status": "Researching",
+    "ecosystem": "Soneium",
+    "website": "",
+    "notes": "A strategy-focused mini app with collectible game elements.",
+    "score": 8,
+    "tags": [
+      "game",
+      "strategy",
+      "cards"
     ]
   }
 ]
