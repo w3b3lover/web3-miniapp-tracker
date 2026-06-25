@@ -1,6 +1,6 @@
 from src.config import REPORT_TITLE
 from src.formatter import format_app
-from src.stats import count_by_category, count_by_ecosystem, count_by_status
+from src.stats import count_by_category, count_by_ecosystem, count_by_status, count_by_tag
 from src.tracker import MiniAppTracker
 
 
@@ -32,5 +32,11 @@ def build_summary(tracker: MiniAppTracker) -> str:
 
     for ecosystem, total in count_by_ecosystem(tracker).items():
         lines.append(f"- {ecosystem}: {total}")
+
+    lines.append("")
+    lines.append("Tags:")
+
+    for tag, total in count_by_tag(tracker).items():
+        lines.append(f"- {tag}: {total}")
 
     return "\n".join(lines)
