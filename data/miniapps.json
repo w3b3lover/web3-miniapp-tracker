@@ -6,6 +6,7 @@
     "ecosystem": "Soneium",
     "website": "https://app.startale.com",
     "notes": "Tracking mini apps, user experience, and ecosystem activity.",
+    "score": 9,
     "tags": [
       "web3",
       "miniapps",
@@ -19,6 +20,7 @@
     "ecosystem": "Soneium",
     "website": "",
     "notes": "A mini app game with a simple and friendly user experience.",
+    "score": 7,
     "tags": [
       "game",
       "cat",
@@ -32,6 +34,7 @@
     "ecosystem": "Soneium",
     "website": "",
     "notes": "A game-focused mini app with strong visual identity.",
+    "score": 8,
     "tags": [
       "game",
       "knights",
@@ -45,9 +48,24 @@
     "ecosystem": "Soneium",
     "website": "",
     "notes": "A cozy game mini app with farming and adventure elements.",
+    "score": 8,
     "tags": [
       "game",
       "farming",
+      "miniapp"
+    ]
+  },
+  {
+    "name": "ELHEXA",
+    "category": "Game",
+    "status": "Watching",
+    "ecosystem": "Soneium",
+    "website": "",
+    "notes": "A fantasy-style mini app with strong visual appeal.",
+    "score": 8,
+    "tags": [
+      "game",
+      "fantasy",
       "miniapp"
     ]
   }
