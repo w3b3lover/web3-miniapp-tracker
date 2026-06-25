@@ -1,5 +1,6 @@
 from src.config import REPORT_TITLE
 from src.formatter import format_app
+from src.sorter import get_top_apps
 from src.stats import count_by_category, count_by_ecosystem, count_by_status, count_by_tag, average_score
 from src.tracker import MiniAppTracker
 
@@ -10,8 +11,14 @@ def build_summary(tracker: MiniAppTracker) -> str:
         f"Total mini apps: {tracker.count_apps()}",
         f"Average score: {average_score(tracker)}",
         "",
-        "Mini Apps:"
+        "Top Apps:"
     ]
+
+    for app in get_top_apps(tracker.list_apps()):
+        lines.append(f"- {format_app(app)}")
+
+    lines.append("")
+    lines.append("Mini Apps:")
 
     for app in tracker.list_apps():
         lines.append(f"- {format_app(app)}")
