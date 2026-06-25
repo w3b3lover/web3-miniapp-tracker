@@ -1,3 +1,4 @@
+from src.config import DATA_FILE
 from src.loader import load_miniapps
 from src.report import build_summary
 from src.tracker import MiniAppTracker
@@ -5,7 +6,7 @@ from src.tracker import MiniAppTracker
 
 def main():
     tracker = MiniAppTracker()
-    apps = load_miniapps("data/miniapps.json")
+    apps = load_miniapps(DATA_FILE)
 
     for app in apps:
         tracker.add_app(app)
