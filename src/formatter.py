@@ -1,5 +1,6 @@
 from src.models import MiniApp
 from src.review import get_score_label
+from src.ux_review import onboarding_score
 
 
 def format_app(app: MiniApp) -> str:
@@ -17,6 +18,7 @@ def format_app_details(app: MiniApp) -> str:
         f"Website: {app.website}",
         f"Score: {app.score}/10",
         f"Review: {get_score_label(app)}",
+        f"UX Note: {onboarding_score(app)}",
         f"Tags: {tags}",
         f"Notes: {app.notes}",
     ]
