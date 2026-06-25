@@ -9,4 +9,5 @@ class MiniApp:
     ecosystem: str = ""
     website: str = ""
     notes: str = ""
+    score: int = 0
     tags: list[str] = field(default_factory=list)
