@@ -26,6 +26,12 @@ class MiniAppTracker:
             if app.category.lower() == category.lower()
         ]
 
+    def filter_by_ecosystem(self, ecosystem: str):
+        return [
+            app for app in self.apps
+            if app.ecosystem.lower() == ecosystem.lower()
+        ]
+
     def search(self, keyword: str):
         keyword = keyword.lower()
 
@@ -34,5 +40,6 @@ class MiniAppTracker:
             if keyword in app.name.lower()
             or keyword in app.category.lower()
             or keyword in app.notes.lower()
+            or keyword in app.ecosystem.lower()
             or keyword in " ".join(app.tags).lower()
         ]
