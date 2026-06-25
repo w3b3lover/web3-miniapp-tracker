@@ -1,5 +1,6 @@
 from src.config import REPORT_TITLE
 from src.formatter import format_app
+from src.recommendations import build_action_list
 from src.sorter import get_top_apps
 from src.stats import count_by_category, count_by_ecosystem, count_by_status, count_by_tag, average_score
 from src.tracker import MiniAppTracker
@@ -22,6 +23,12 @@ def build_summary(tracker: MiniAppTracker) -> str:
 
     for app in tracker.list_apps():
         lines.append(f"- {format_app(app)}")
+
+    lines.append("")
+    lines.append("Recommended Next Actions:")
+
+    for action in build_action_list(tracker.list_apps()):
+        lines.append(f"- {action}")
 
     lines.append("")
     lines.append("Categories:")
