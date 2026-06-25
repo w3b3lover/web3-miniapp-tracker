@@ -10,6 +10,8 @@ A simple Python project for tracking Web3 mini apps, ecosystem notes, and user e
 - Category filtering
 - Tag utilities
 - Search support
+- Simple review scores
+- Average score reporting
 - Summary reports
 - Text report export
 - CSV export
