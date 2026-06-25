@@ -30,6 +30,7 @@ def load_miniapps(file_path: str):
                 ecosystem=item.get("ecosystem", ""),
                 website=item.get("website", ""),
                 notes=item.get("notes", ""),
+                score=item.get("score", 0),
                 tags=item.get("tags", [])
             )
         )
