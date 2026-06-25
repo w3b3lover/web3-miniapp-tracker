@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 from src.models import MiniApp
+from src.validator import validate_miniapp_data
 
 
 def load_miniapps(file_path: str):
@@ -10,11 +11,17 @@ def load_miniapps(file_path: str):
     if not path.exists():
         return []
 
-    data = json.loads(path.read_text(encoding="utf-8"))
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
 
     apps = []
 
     for item in data:
+        if not validate_miniapp_data(item):
+            continue
+
         apps.append(
             MiniApp(
                 name=item.get("name", ""),
