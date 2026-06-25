@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+setup_project.py
+batch_*.py
+update_*.py
+reports/
