@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Startale App",
+    "category": "Super App",
+    "status": "Testing",
+    "ecosystem": "Soneium",
+    "website": "https://app.startale.com",
+    "notes": "Tracking mini apps, user experience, and ecosystem activity.",
+    "tags": [
+      "web3",
+      "miniapps",
+      "soneium"
+    ]
+  },
+  {
+    "name": "NekoCat Play",
+    "category": "Game",
+    "status": "Reviewing",
+    "ecosystem": "Soneium",
+    "website": "",
+    "notes": "A mini app game with a simple and friendly user experience.",
+    "tags": [
+      "game",
+      "cat",
+      "miniapp"
+    ]
+  },
+  {
+    "name": "Pocket Knights",
+    "category": "Game",
+    "status": "Watching",
+    "ecosystem": "Soneium",
+    "website": "",
+    "notes": "A game-focused mini app with strong visual identity.",
+    "tags": [
+      "game",
+      "knights",
+      "miniapp"
+    ]
+  }
+]
