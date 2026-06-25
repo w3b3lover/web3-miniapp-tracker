@@ -23,3 +23,13 @@ def count_by_tag(tracker: MiniAppTracker):
             counter[tag] += 1
 
     return counter
+
+
+def average_score(tracker: MiniAppTracker):
+    apps = tracker.list_apps()
+
+    if not apps:
+        return 0
+
+    total = sum(app.score for app in apps)
+    return round(total / len(apps), 2)
